@@ -1,37 +1,37 @@
 import React, {Component} from 'react';
 
 class HeaderStatistics extends Component{
+
     render(){
         return (
-            <div class="row tile_count">
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-clock-o"></i> Estatísticas a partir de:</span>
-              <div class="count">01/05/2018</div>
+            <div className="row tile_count">
+            <div className="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span className="count_top"><i className="fa fa-clock-o"></i> Jogos analisados:</span>
+              <div className="count">{this.props.profileDetails.nuGames}</div>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
-              <div class="count">2500</div>
-              <span class="count_bottom"><i class="green">4% </i> Maior que a média do rank</span>
+            <div className="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span className="count_top"><i className="fa fa-user"></i> Total Kills</span>
+              <div className="count">{this.props.profileDetails.nuKills}</div>
+              <span className="count_bottom"><i className="green">{this.props.profileDetails.nuKills / this.props.profileDetails.nuGames} </i> Média pro jogo</span>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
-              <div class="count green">2,500</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            <div className="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span className="count_top"><i className="fa fa-user"></i> Total Deaths</span>
+              <div className="count green">{this.props.profileDetails.nuDeaths}</div>
+              <span className="count_bottom"><i className="green">{this.props.profileDetails.nuDeaths / this.props.profileDetails.nuGames} </i> Média pro jogo</span>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
-              <div class="count">4,567</div>
-              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
+            <div className="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span className="count_top"><i className="fa fa-user"></i> Total Assists</span>
+              <div className="count">{this.props.profileDetails.nuAssists}</div>
+              <span className="count_bottom"><i className="green">{this.props.profileDetails.nuAssists / this.props.profileDetails.nuGames} </i> Média pro jogo</span>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Collections</span>
-              <div class="count">2,315</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            <div className="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span className="count_top"><i className="fa fa-user"></i> Total Collections</span>
+              <div className="count">2,315</div>
+              <span className="count_bottom"><i className="green"><i className="fa fa-sort-asc"></i>34% </i> From last Week</span>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
-              <div class="count">7,325</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            <div className="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span className="count_top"><i className="fa fa-user"></i> Penta kills</span>
+              <div className="count">{this.props.profileDetails.nuPentaKills}</div>
             </div>
           </div>
         )
