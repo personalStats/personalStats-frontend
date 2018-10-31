@@ -4,10 +4,10 @@ class Footer extends Component{
     render(){
         return (
             <footer>
-            <div class="pull-right">
+            <div className="pull-right">
               Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
             </div>
-            <div class="clearfix"></div>
+            <div className="clearfix"></div>
           </footer>
         )
     }

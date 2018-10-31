@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "gentelella": "^1.4.0",
+    "moment": "^2.22.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
+    "react-moment": "^0.8.2",
     "react-scripts": "1.1.4"
   },
   "scripts": {
@@ -13,5 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-number-format": "^4.0.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0"
   }
 }
